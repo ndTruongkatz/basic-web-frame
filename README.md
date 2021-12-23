@@ -1,6 +1,10 @@
-Để mở được website lên sử dụng câu lệnh này trong Terminal:
+Để mở được website lên, sử dụng câu lệnh này trong Terminal:
 "npm run dev";
 
+
+
+
+Các câu lệnh dùng trong Terminal khi sử dụng Taiwindcss:
 - install Node Js
 - npm install -D tailwindcss postcss autoprefixer vite
 - npm init -y
