@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaslesVPN</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="./build/app.css">
+</head>
+<!-- 
+    - install Node Js
+    - npm install -D tailwindcss postcss autoprefixer vite
+    - npm init -y
+    - npm install -g
+    - npx tailwindcss init -p
+    - npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css
+    - npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch
+    - npm run kat -> chuyen trong file Json  "vite"
+
+    Note: create folder Css > file .css after add ( 
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities; 
+)
+
+RESPONSIVE 
+
+SM : 640px
+MD: 768 px
+lg: 1024px
+xl: 1280px
+
+
+lg:hover:bg-blue
+
+Parent : group
+child : group-hover:...
+
+ -->
+
+
+<body>
+
+    <div class="layout-full w-full">
+        <div class="wrapper__layout max-w-[1440px] mx-auto ">
+            <div class="layout-container  text-[#000] mt-11">
+
+                <header>
+                    <div class="header-top flex justify-between h-[40px] leading-4 items-center text-center mb-28">
+                        <div class="header__logo flex text-center items-center">
+                            <img srcset="./img/Vector.png 2x" alt="" class="w-[35px] h-[35px] mr-[10px]">
+                            <a href="!#" class="header__logo-link">Lasles <strong>VPN</strong></a>
+
+                        </div>
+
+
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">About</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Features</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Pricing</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Testimonials</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Help</a>
+                            </li>
+                            <li class="menu-item menu-item--auth">
+
+                                <div class="login-sign-in header-signin text-[#0B132A] font-medium mr-1 md:mr-[30px] lg:mr-[30px] xl:mr-[30px] 2xl:mr-[30px]">
+                                    <a href="!#" class="text block">Sign In</a>
+                                </div>
+                                <div class="login-sign-up text-primary  ">
+                                    <a href="!#" class="items-center block w-full h-full text-center font-medium border py-1 px-2 md:py-3 md:px-11 
+                                    lg:py-3 lg:px-11 
+                                    xl:py-3 xl:px-11 border-red-500 rounded-full">Sign Up</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-toggle md:hidden h-5 w-[30px]">
+                            <span class="w-full h-[3px] bg-color-text block"></span>
+                            <span class="w-full h-[3px] bg-color-text block"></span>
+                            <span class="w-full h-[3px] bg-color-text block"></span>
+                        </div>
+
+
+
+                        <div class="header-auth flex items-center justify-between text-center">
+                            <div class="login-sign-in text-[#0B132A] font-medium mr-1 md:mr-[30px] lg:mr-[30px] xl:mr-[30px] 2xl:mr-[30px]">
+                                <a href="!#" class="text block">Sign In</a>
+                            </div>
+                            <div class="login-sign-up text-primary mr-5 md:mr-0 lg:mr-0 xl:mr-0 2xl:mr-0  ">
+                                <a href="!#" class="items-center block w-full h-full text-center font-medium border py-1 px-2 md:py-3 md:px-11 
+                                lg:py-3 lg:px-11 
+                                xl:py-3 xl:px-11 border-red-500 rounded-full">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="sc-mid">
+                    <div class="content-mid flex sm:flex-col md:flex-row justify-between md:items-center">
+                        <div class="content-about flex-1 w-full max-w-[555px]">
+                            <h1 class="content-heading font-medium md:text-[50px] text-[#0B132A] md:leading-[70px] md:mb-5">Want anything to be easy with <strong>LaslesVPN</strong> .</h1>
+                            <p class="text-[#4F5665] mb-15">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+
+                            <a href="" class="px-[77px] py-[17px]  border border-primary rounded-2xl bg-primary text-[#FFFFFF] shadow-custom ">Get Started</a>
+                        </div>
+
+                        <div class="content-img w-[610px] h-[382px] flex-1 sm:mt-5">
+                            <img src="./img/Illustration 1.png " alt="hinh anh" class="w-full h-full">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="intro md:my-[90px] ">
+                    <div class="information-intro grid md:grid-cols-3 bg-[#ffffff] gap-4 p-[37px] mx-auto my-0  items-center max-w-[1140px] min-h-[200px]  shadow-xl rounded-xl">
+                        <div class="info-user flex justify-center items-center gap-[36.5px] flex-1 h-full">
+                            <div class="user-icon h-[55px] w-[55px] rounded-full bg-[#FFECEC] text-primary text-center px-[18px] py-[19px] text-[16px] items-center  ">
+                                <ion-icon name="person"></ion-icon>
+                            </div>
+                            <div class="">
+                                <div class="text-[#0B132A] font-bold text-[25px] leading-[30px]">90+</div>
+                                <span class="text-[#4F5665] font-normal text-[20px]">User</span>
+                            </div>
+                        </div>
+
+                        <div class="info-location flex justify-center items-center gap-[36.5px] flex-1 h-full md:border-l-2 md:border-r-2 border-[#EEEFF2]">
+                            <div class="location-icon h-[55px] w-[55px] rounded-full bg-[#FFECEC] text-primary text-center p-[18px] items-center  text-[16px]">
+                                <ion-icon name="location"></ion-icon>
+                            </div>
+                            <div class="">
+                                <div class="text-[#0B132A] font-bold text-[25px] leading-[30px]">30+</div>
+                                <span class="text-[#4F5665] font-normal text-[20px]">Location</span>
+                            </div>
+                        </div>
+
+                        <div class="info-Servers flex justify-center items-center gap-[36.5px] h-full flex-1">
+                            <div class="Servers-icon h-[55px] w-[55px] rounded-full bg-[#FFECEC] text-primary text-center p-[18px] items-center  text-[16px]">
+                                <ion-icon name="globe"></ion-icon>
+                            </div>
+                            <div class="">
+                                <div class="text-[#0B132A] font-bold text-[25px] leading-[30px]">50+</div>
+                                <span class="text-[#4F5665] font-normal text-[20px]">Servers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <section class="hero">
+
+                <div class="layer__hero mb-8 md:mb-[125px]">
+                    <div class="layout-container">
+                        <div class=" md:mt-24 mx-auto my-0 max-w-[1140px]">
+                            <div class="hero-item flex md:justify-between gap-x-5 lg:gap-x-6  md:items-center ">
+                                <div class="hero-item-img lg:h-[415px] lg:w-[508px] md:flex-1  ml-6">
+                                    <img src="./img/Illustration 2.png" class="w-full h-full object-cover" alt="">
+                                </div>
+
+                                <div class="section-hero-about max-w-[427px] md:flex-1">
+                                    <h2 class="leading-[50px] text-[35px] text-color-text font-medium max-w-[383px] mb-5">We Provide Many Features You Can Use</h2>
+                                    <p class="leading-[30px] text-[#4F5665] ">You can explore the features that we provide with fun and have their own functions each feature.</p>
+
+                                    <!-- or can use UL > LI list -->
+
+                                    <div class="mt-5  leading-[30px]">
+                                        <ion-icon name="checkmark-circle" class="text-greenV relative top-[4px] text-[20px]"></ion-icon>
+                                        <span class="text-[#4F5665] ml-[5px] text-[14px]">Powerfull online protection.</span>
+                                    </div>
+
+                                    <div class="mt-[15px] leading-[30px]">
+                                        <ion-icon name="checkmark-circle" class="text-greenV relative top-[4px] text-[20px]"></ion-icon>
+                                        <span class="text-[#4F5665] ml-[5px] text-[14px]">Internet without borders.</span>
+                                    </div>
+
+                                    <div class="mt-[15px] leading-[30px]">
+                                        <ion-icon name="checkmark-circle" class="text-greenV relative top-[4px] text-[20px]"></ion-icon>
+                                        <span class="text-[#4F5665] ml-[5px] text-[14px]">Supercharged VPN</span>
+                                    </div>
+
+                                    <div class="mt-[15px] leading-[30px]">
+                                        <ion-icon name="checkmark-circle" class="text-greenV relative top-[4px] text-[20px]"></ion-icon>
+                                        <span class="text-[#4F5665] ml-[5px] text-[14px]">No specific time limits.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+
+        <!-- layout plan -->
+
+        <section class="plan layour-gray w-full bg-linear pt-20 px-0 pb-[30px]">
+            <div class="wrapper__layout ">
+                <div class="layout-container">
+
+                    <div class="plan-header text-center my-0 mx-auto max-w-[555px] mb-15">
+                        <h2 class="font-medium text-[35px] text-color-text leading-[50px] ">Choose Your Plan</h2>
+                        <p class="leading-[30px] text-spanC">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+                    </div>
+
+                    <div class="plan-list  grid lg:grid-cols-3 lg:gap-x-[50px] mb-[175px] ">
+                        <!-- item1 -->
+                        <div class="plan-item flex flex-col items-center  rounded-[10px] bg-[#ffffff] max-w-[330px] pt-20 pb-[50px] px-[50px]  border border-2 boder-[#DDDDDD]">
+
+                            <div class="plan-img icon-box w-[145px] h-[165px] mx-auto mb-[30px]">
+                                <img src="./img/Free.png" alt="gift" class="w-full h-full">
+                            </div>
+
+                            <h3 class="font-medium text-color-text text-[18px] leading[30px] mb-[30px] ">Free Plan</h3>
+
+                            <div class="plan-details mb-[50px]">
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Unlimited Bandwitch</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Encrypted Connection</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <span class="text-[14px] leading-[30px] text-spanC">No Traffic Logs</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <span class="text-[14px] leading-[30px] text-spanC">Works on All Devices</span>
+                                </div>
+                            </div>
+
+
+                            <p class="font-medium text-color-text text-[25px] leading-[30px] mt-auto mb-5">Free</p>
+                            <a href="!#" class="block px-[63px] py-[13px] font-bold border border-primary rounded-full text-primary">Select</a>
+
+                        </div>
+
+                        <!-- fix bug -->
+                        <!-- item2 -->
+                        <div class="plan-item flex flex-col items-center rounded-[10px] bg-[#ffffff] max-w-[330px] pt-20 pb-[50px] px-[50px]  border border-2 boder-[#DDDDDD]">
+
+                            <div class="plan-img icon-box w-[145px] h-[165px] mx-auto mb-[30px]">
+                                <img src="./img/Standard.png" alt="gift" class="w-full h-full">
+                            </div>
+
+                            <h3 class="font-medium text-color-text text-[18px] leading[30px] mb-[30px] ">Standard Plan</h3>
+
+                            <div class="plan-details mb-[50px]">
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Unlimited Bandwitch</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Encrypted Connection</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <span class="text-[14px] leading-[30px] text-spanC">No Traffic Logs</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <span class="text-[14px] leading-[30px] text-spanC">Works on All Devices</span>
+                                </div>
+
+                                <div class=" flex items-center gap-x-[25px] mb-[10px]">
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <span class="text-[14px] leading-[30px] text-spanC">Works on All Devices</span>
+                                </div>
+
+                            </div>
+                            <p class="font-medium text-color-text text-[25px] leading-[30px] mt-auto mb-5">Free</p>
+                            <a href="!#" class="block px-[63px] py-[13px] font-bold border border-primary rounded-full text-primary">Select</a>
+                        </div>
+
+
+
+                        <!-- item 3 -->
+
+                        <div class="flex flex-col items-center rounded-[10px] bg-[#ffffff] max-w-[330px] pt-20 pb-[50px] px-[50px] border border-2 border-primary">
+                            <div class="icon-box w-[145px] h-[165px] my-auto mb-[30px]">
+                                <img src="./img/Premium.png" alt="gift" class="w-full h-full">
+                            </div>
+
+                            <h3 class="font-medium text-color-text text-[18px] leading[30px] mb-[30px] ">Premium Plan</h3>
+
+                            <div class="plan-details mb-[50px]">
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px]  leading-[30px] text-spanC">Unlimited Bandwitch</span>
+                                </div>
+
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Encrypted Connection</span>
+                                </div>
+
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Yes Traffic Logs</span>
+                                </div>
+
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Works on All Devices</span>
+                                </div>
+
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Connect Anyware</span>
+                                </div>
+
+                                <div class="flex items-center gap-x-[25px] mb-[10px]">
+                                    <!-- <ion-icon name="checkmark" class="text-greenV mr-5 w-[15px] h-[15px] "></ion-icon> -->
+                                    <img src="./img/VectorV.png" alt="" class="w-[14px] h-[10px]">
+                                    <span class="text-[14px] leading-[30px] text-spanC">Get New Features</span>
+                                </div>
+
+
+                            </div>
+
+
+                            <p class="font-medium text-color-text text-[25px] leading-[30px] mt-auto mb-5">$12 <span class="text-spanC font-normal">/ mo </span> </p>
+                            <a href="!#" class="shadow-2xl font-bold px-[63px] py-[13px] border border-primary bg-primary rounded-full text-[#ffffff]">Select</a>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="map-heading max-w-[555px] text-center mx-auto">
+                        <h3 class="text-color-text text-[35px] font-medium leading[50px] max-w-[382px] my-0 mx-auto mb-5">Huge Global Network of Fast VPN</h3>
+                        <span class="mt-5 leading-[30px] text-spanC">See <span class="font-medium leading-[30px]">LaslesVPN</span> everywhere to make it easier for you when you move locations.</span>
+                    </div>
+
+                    <div class="img-map mt-[50px] lg:mt-[155px]">
+                        <img src="./img/Huge Global.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="partner mb-[25px] lg:mb-[50px]">
+            <div class="layout-container">
+                <div class="partner-container flex items-center justify-between gap-x-[20px] lg:gap-x-[60px]">
+                    <div class="partner-item">
+                        <img src="./img/teamNF.png" alt="">
+                    </div>
+
+                    <div class="partner-item">
+                        <img src="./img/teamReddit.png" alt="">
+                    </div>
+
+                    <div class="partner-item">
+                        <img src="./img/logo-amazon.png" alt="">
+                    </div>
+
+                    <div class="partner-item">
+                        <img src="./img/teamDiscord.png" alt="">
+                    </div>
+
+                    <div class="partner-item">
+                        <img src="./img/teamSpotify.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customer">
+            <div class="layout-container">
+                <div class="customer-container">
+                    <div class="ctm-heading text-center my-0 mx-auto max-w-[555px]">
+                        <h4 class="text-color-text text-[35px] font-medium leading[50px]  my-0 mx-auto">Trusted by Thousands of Happy Customer</h4>
+                        <p class="text-spanC text-[16px] font-normal leading[30px] mt-2 mx-auto mb-[60px]">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+                    </div>
+                    <!-- grid gap-x-[50px] grid-cols-3 -->
+                    <div class="customer-list">
+                        <div class="customer-item border border-2 border-[#DDDDDD] rounded-[10px] p-[30px] mx-[25px] ">
+                            <div class="customer-top flex items-center justify-between mb-5">
+                                <div class="info flex items-center gap-x-5">
+                                    <div class="ctm-avt h-[50px] w-[50px] ">
+                                        <img src="./img/avt.png" alt="">
+                                    </div>
+
+                                    <div class="ctm-name">
+                                        <h6 class="name leading-[1] text-color-text">Viezh Robert</h6>
+                                        <p class="location text-spanC">Warsaw, Poland</p>
+                                    </div>
+                                </div>
+
+                                <div class="ctm-rate flex items-center gap-x-[10px]">
+                                    <span>4.5</span>
+                                    <ion-icon name="star" class="text-[#FEA250]"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="about mt-5">
+                                <p>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                            </div>
+                        </div>
+
+                        <!-- nv2 -->
+
+                        <div class="customer-item border border-2 border-[#DDDDDD] rounded-[10px] p-[30px] mx-[25px] ">
+                            <div class="customer-top flex items-center justify-between mb-5">
+                                <div class="info flex items-center gap-x-5">
+                                    <div class="ctm-avt h-[50px] w-[50px] ">
+                                        <img src="./img/avt.png" alt="">
+                                    </div>
+
+                                    <div class="ctm-name">
+                                        <h6 class="name leading-[1] text-color-text">Viezh Robert</h6>
+                                        <p class="location text-spanC">Warsaw, Poland</p>
+                                    </div>
+                                </div>
+
+                                <div class="ctm-rate flex items-center gap-x-[10px]">
+                                    <span>4.5</span>
+                                    <ion-icon name="star" class="text-[#FEA250]"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="about mt-5">
+                                <p>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                            </div>
+                        </div>
+
+                        <!-- nv 3 -->
+                        <div class="customer-item border border-2 border-[#DDDDDD] rounded-[10px] p-[30px] mx-[25px] ">
+                            <div class="customer-top flex items-center justify-between mb-5">
+                                <div class="info flex items-center gap-x-5">
+                                    <div class="ctm-avt h-[50px] w-[50px] ">
+                                        <img src="./img/avt.png" alt="">
+                                    </div>
+
+                                    <div class="ctm-name">
+                                        <h6 class="name leading-[1] text-color-text">Viezh Robert</h6>
+                                        <p class="location text-spanC">Warsaw, Poland</p>
+                                    </div>
+                                </div>
+
+                                <div class="ctm-rate flex items-center gap-x-[10px]">
+                                    <span>4.5</span>
+                                    <ion-icon name="star" class="text-[#FEA250]"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="about mt-5">
+                                <p>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                            </div>
+                        </div>
+
+                        <!-- nv 4 -->
+
+                        <div class="customer-item border border-2 border-[#DDDDDD] rounded-[10px] p-[30px] mx-[25px] ">
+                            <div class="customer-top flex items-center justify-between mb-5">
+                                <div class="info flex items-center gap-x-5">
+                                    <div class="ctm-avt h-[50px] w-[50px] ">
+                                        <img src="./img/avt.png" alt="">
+                                    </div>
+
+                                    <div class="ctm-name">
+                                        <h6 class="name leading-[1] text-color-text">Viezh Robert</h6>
+                                        <p class="location text-spanC">Warsaw, Poland</p>
+                                    </div>
+                                </div>
+
+                                <div class="ctm-rate flex items-center gap-x-[10px]">
+                                    <span>4.5</span>
+                                    <ion-icon name="star" class="text-[#FEA250]"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="about mt-5">
+                                <p>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-number">
+            <div class="dot-page">
+
+            </div>
+
+            <div class="next-back-btn">
+                <a href="" class="next-link">
+
+                </a>
+
+                <a href="" class="back-link">
+
+                </a>
+            </div>
+        </div>
+
+        <section class="section-sub lg:translate-y-[50%]">
+            <div class="layout-container">
+                <div class="sub-item flex items-center justify-between rounded-[10px]  bg-[#FFFFFF] py-[58px] px-[70px] mt-10 shadow-custom2">
+                    <div class="heading-sub  w-[370px]">
+                        <h5 class="text-color-text font-medium text-[35px]">Subscribe Now for Get Special Features!</h5>
+                        <span class="text-spanC mt-2 block">Let's subscribe with us and find the fun.</span>
+                    </div>
+
+                    <div class="btn-sub">
+                        <a href="" class="bg-primary block text-[#FFFFFF] text-center font-bold leading-6 py-[13px] px-[26px] md:py-[17px]  md:px-[65px] rounded-[10px] shadow-xl">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-[#f8f8f8] pt-13 lg:pt-[180px] px-3 pb-[100px]">
+            <div class="layout-container ">
+
+                <div class="footer-layout lg:gap-x-[125px]">
+
+                    <div class="ft-about ">
+                        <a href="!#" class="ft-about-img w-[150px] mb-[25px] inline-block"><img src="./img/logo.png" alt="" class="w-full h-full"></a>
+                        <span class="text-spanC mb-5 block"> <strong class="font-medium">LaslesVPN</strong> is a private virtual network that has unique features and has high security.</span>
+
+                        <div class="social flex items-center mb-4">
+                            <a href="!#" class="social-link text w-[55px]">
+                                <img src="./img/Socmed 3/Facebook.png" alt="">
+                            </a>
+                            <a href="" class="social-link text w-[55px]">
+                                <img src="./img/Socmed/Twitter.png" alt="">
+                            </a>
+                            <a href="" class="social-link text w-[55px]">
+                                <img src="./img/Socmed 2/Instagram.png " alt="">
+                            </a>
+                        </div>
+
+                        <p class="coppyright text-[#AFB5C0]">
+                            ©2020Lasles
+                            <strong>VPN</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="product">
+                        <h3 class="font-medium text-[18px] mb-5 leading-[30px]">Product</h3>
+                        <ul class="text-spanC">
+                            <li>
+                                <a href="!#">Download</a>
+                            </li>
+                            <li>
+                                <a href="!#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="!#">Locations</a>
+                            </li>
+                            <li>
+                                <a href="!#">Server</a>
+                            </li>
+                            <li>
+                                <a href="!#">Countries</a>
+                            </li>
+                            <li>
+                                <a href="!#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="engage">
+                        <h3 class="font-medium text-[18px] mb-5 leading-[30px]">Engage</h3>
+                        <ul class="text-spanC">
+
+                            <li>
+                                <a href="!#">LaslesVPN ?</a>
+                            </li>
+                            <li>
+                                <a href="!#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="!#">Tutorials</a>
+                            </li>
+                            <li>
+                                <a href="!#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="!#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="!#">Terms of Service</a> </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="earn-money">
+                        <h3 class="font-medium text-[18px] mb-5 leading-[30px]">Earn Money</h3>
+
+                        <ul class="text-spanC">
+                            <li>
+                                <a href="!#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="!#">Become Partner</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./scripts/app.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
